@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1 class="game-title">Typing Game</h1>
+            <div id="user-info" class="user-info">
+                <label for="username">Enter Your Name: </label>
+                <input type="text" id="username" placeholder="Your Name" class="input-field">
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <p>Time Left: <span id="timer">60</span>s</p>
+                </div>
+                <div class="stat-box">
+                    <p>Score: <span id="score">0</span></p>
+                </div>
+                <div class="stat-box">
+                    <p>Words Typed: <span id="word-count">0</span></p> <!-- Added word count -->
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="game-area">
+            <div id="word-display" class="word-display">Press Start to Begin!</div>
+            <input type="text" id="word-input" placeholder="Type the word..." autocomplete="off" disabled class="input-field">
+            <div id="feedback" class="feedback"></div>
+        </div>
+
+        <div class="game-controls">
+            <button id="start-btn" class="btn btn-start">Start</button>
+            <button id="pause-btn" class="btn btn-pause" disabled>Pause</button>
+            <button id="restart-btn" class="btn btn-restart" disabled>Restart</button>
+        </div>
+
+        <div class="achievements">
+            <h3>Achievements</h3>
+            <div class="achievement-list" id="achievements"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
