@@ -7,6 +7,8 @@
     --error-color: #e74c3c;
     --background-color: #f5f6fa;
     --text-color: #2c3e50;
+    --highlight-color: #f0f0f0;
+    --btn-hover-color: #357abd;
 }
 
 * {
@@ -66,7 +68,7 @@ body {
 }
 
 .stat-box {
-    background: #f8f9fa;
+    background: var(--highlight-color);
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
@@ -82,14 +84,14 @@ body {
 }
 
 #word-display {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: var(--highlight-color);
     border-radius: 10px;
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +137,7 @@ body {
 
 .btn:hover {
     transform: translateY(-2px);
-    background: #357abd;
+    background: var(--btn-hover-color);
 }
 
 .btn:active {
@@ -163,11 +165,17 @@ body {
         font-size: 2rem;
     }
 
-    .word-display {
+    #word-display {
         font-size: 1.5rem;
+        width: 80%;
     }
 
     .stats-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
     }
 }
