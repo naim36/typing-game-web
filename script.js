@@ -148,32 +148,32 @@ class TypingGame {
         }
     }
 
-    restartGame() {
-        // Clear the previous timer before starting a new one
-        clearInterval(this.timer);
+    // restartGame() {
+    //     // Clear the previous timer before starting a new one
+    //     clearInterval(this.timer);
     
-        // Reset game state
-        this.isPlaying = false;
-        this.isPaused = false;
-        this.timeLeft = 60;
-        this.score = 0;
-        this.wordCount = 0;
-        this.totalWordsAttempted = 0;
-        this.wordDisplay.textContent = 'Press Start to Begin!';
-        this.timeDisplay.textContent = this.timeLeft;
-        this.scoreDisplay.textContent = this.score;
-        this.wordCountDisplay.textContent = this.wordCount;
-        this.accuracyDisplay.textContent = '0%'; 
-        this.userInput.value = '';
-        this.userInput.disabled = true;
-        this.startBtn.disabled = false;
-        this.pauseBtn.disabled = true;
-        this.pauseBtn.textContent = 'Pause';
-        this.achievements.innerHTML = '';
+    //     // Reset game state
+    //     this.isPlaying = false;
+    //     this.isPaused = false;
+    //     this.timeLeft = 60;
+    //     this.score = 0;
+    //     this.wordCount = 0;
+    //     this.totalWordsAttempted = 0;
+    //     this.wordDisplay.textContent = 'Press Start to Begin!';
+    //     this.timeDisplay.textContent = this.timeLeft;
+    //     this.scoreDisplay.textContent = this.score;
+    //     this.wordCountDisplay.textContent = this.wordCount;
+    //     this.accuracyDisplay.textContent = '0%'; 
+    //     this.userInput.value = '';
+    //     this.userInput.disabled = true;
+    //     this.startBtn.disabled = false;
+    //     this.pauseBtn.disabled = true;
+    //     this.pauseBtn.textContent = 'Pause';
+    //     this.achievements.innerHTML = '';
     
-        // Reset the game when restarting
-        this.startGame();  // Start a new game after restarting
-    }
+    //     // Reset the game when restarting
+    //     this.startGame();  // Start a new game after restarting
+    // }
 
     endGame() {
         clearInterval(this.timer);
