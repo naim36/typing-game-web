@@ -15,7 +15,7 @@ function startGame() {
     if (mode === 'sentence') {
         timeLeft = 120;  // 2 minutes for Sentence Mode
     } else {
-        timeLeft = 60;  // 1 minute for Word Mode
+        timeLeft = 60;  // 1 minute for Word Mode  00
     }
 
     document.getElementById('timer').textContent = timeLeft;
